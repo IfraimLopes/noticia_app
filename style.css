@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #0a74da;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-box {
+  margin-top: 15px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  outline: none;
+  color: #0a74da;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card .content {
+  padding: 15px;
+}
+
+.news-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.news-card a {
+  text-decoration: none;
+  color: #0a74da;
+  font-weight: bold;
+}
+
+footer {
+  background: #0a74da;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
